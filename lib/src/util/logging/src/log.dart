@@ -65,7 +65,6 @@ class Log {
           Directory(
             path.join((await getApplicationSupportDirectory()).path, 'logs'),
           );
-      print('Log directory: ${logDir.path}');
 
       if (!await logDir.exists()) {
         await logDir.create(recursive: true);
