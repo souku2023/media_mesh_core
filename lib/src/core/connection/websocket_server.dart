@@ -96,7 +96,7 @@ class WsClient {
 
   /// Stream of envelopes for a specific event name.
   Stream<Envelope> onEvent(String name) => _eventControllers
-      .putIfAbsent(name, () => StreamController.broadcast())
+      .putIfAbsent(name, () => StreamController<Envelope>.broadcast())
       .stream;
 
   // Internals ---------------------------------------------------------------
