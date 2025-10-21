@@ -1,13 +1,16 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import 'dart:math';
+
+import 'package:web_socket_channel/web_socket_channel.dart';
 
 // Auth
 part 'core/auth/authentication.dart';
+part 'core/connection/envelope.dart';
+part 'core/connection/websocket_client.dart';
 // Connection
-part 'core/connection/connection.dart';
-part 'core/connection/connection_client.dart';
-part 'core/connection/connection_server.dart';
+part 'core/connection/websocket_server.dart';
 // Discovery
 part 'core/discovery/discovery.dart';
 part 'core/file_transfer/sftp_client.dart';
